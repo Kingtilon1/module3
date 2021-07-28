@@ -1,0 +1,16 @@
+BEGIN { FS=",";}
+
+{ # dump each field into an array
+    ARRAY[$var] = $R;
+}
+
+END {
+    asorti(ARRAY,SARRAY);
+    # get length
+    j = length(SARRAY);
+    k=length(SARRAY);
+    printf("%s\n", SARRAY[k])
+    for (i = 1; i <= j-86; i++) {
+        printf("%s\n", SARRAY[i])
+}
+}
